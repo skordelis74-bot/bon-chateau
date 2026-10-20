@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bon Chateau – Χώρος εκδηλώσεων, Ωραιόκαστρο Θεσσαλονίκης</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,700;7..72,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f5f6f4; --ink:#14212b; --muted:#566570; --blue:#0e5a8a; --blue-ink:#ffffff; --line:#b9c4ca; --field:#ffffff;
+  --font:"Literata",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1a22; --ink:#e8edf0; --muted:#9db0bb; --blue:#7fc0ea; --blue-ink:#08202f; --line:#34505f; --field:#16252f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1a22; --ink:#e8edf0; --muted:#9db0bb; --blue:#7fc0ea; --blue-ink:#08202f; --line:#34505f; --field:#16252f;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.125rem;line-height:1.7}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.page{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+
+header{padding:clamp(3rem,10vw,7rem) 0 3rem}
+h1{font-weight:800;font-size:clamp(3.4rem,13vw,8.5rem);line-height:.92;letter-spacing:-.035em;margin:0 0 1.75rem;color:var(--blue)}
+header p{font-size:clamp(1.25rem,3vw,1.7rem);line-height:1.45;max-width:34rem;margin:0 0 2rem}
+.phone{display:inline-block;font-weight:700;font-size:clamp(1.6rem,5vw,2.4rem);text-decoration:none;color:var(--ink);border-bottom:3px solid var(--blue);padding-bottom:.1rem}
+.small{color:var(--muted);font-size:.95rem;margin:.9rem 0 0}
+
+.row{display:grid;gap:.75rem 3rem;padding:3rem 0;grid-template-columns:1fr}
+@media(min-width:800px){.row{grid-template-columns:13rem 1fr}}
+h2{font-size:1rem;font-weight:700;margin:0;color:var(--muted);padding-top:.35rem}
+.body{max-width:38rem}
+.body>:first-child{margin-top:0}
+
+.rating{font-size:1.15rem;margin:0 0 2rem}
+.rating b{font-size:2.4rem;font-weight:800;color:var(--blue);margin-right:.35rem}
+.q{margin:0 0 2.25rem;padding:0}
+.q p{margin:0 0 .35rem;font-size:1.3rem;line-height:1.5}
+.q:nth-child(2) p{font-size:1.1rem}
+.q footer{color:var(--muted);font-size:.95rem}
+
+dl{margin:0;display:grid;grid-template-columns:7.5rem 1fr;gap:.6rem 1rem}
+dt{color:var(--muted)} dd{margin:0}
+
+form{display:grid;gap:1.4rem}
+label{display:grid;gap:.2rem;font-size:.95rem;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:1.1rem;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:4px;padding:.65rem .75rem;width:100%}
+textarea{resize:vertical}
+.two{display:grid;gap:1.4rem;grid-template-columns:1fr}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+button{font:inherit;font-weight:700;background:var(--blue);color:var(--blue-ink);border:0;border-radius:4px;padding:.9rem 1.5rem;cursor:pointer;justify-self:start}
+button:disabled{opacity:.6;cursor:default}
+#msg{margin:0;min-height:1.7em}
+footer.site{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>Bon Chateau</h1>
+  <p>Χώρος εκδηλώσεων στο Δασόκτημα, στο Ωραιόκαστρο. Από ψηλά φαίνεται η πόλη και όλος ο Θερμαϊκός.</p>
+  <a class="phone" href="tel:+302310674830">231 067 4830</a>
+  <p class="small">Για γάμους, δεξιώσεις και άλλες εκδηλώσεις. Καλέστε μας για να δούμε τη διαθέσιμη ημερομηνία.</p>
+</header>
+
+<main>
+  <div class="row">
+    <h2>Τι λένε οι καλεσμένοι</h2>
+    <div class="body">
+      <p class="rating"><b>4,3</b> στα 5, από 884 αξιολογήσεις στους Χάρτες Google</p>
+      <blockquote class="q" style="margin-inline:0">
+        <p>Περάσαμε υπέροχα και όλοι οι καλεσμένοι έμειναν ευχαριστημένοι, από το φαγητό ως την εξυπηρέτηση και τη θέα.</p>
+        <footer>Fotini Str, για τον γάμο της</footer>
+      </blockquote>
+      <blockquote class="q" style="margin-inline:0">
+        <p>Κάναμε τη δεξίωση του γάμου μας στον εξωτερικό χώρο. Νόστιμο φαγητό και ευγενέστατο προσωπικό.</p>
+        <footer>Αλέξανδρος Μουρουζίδης</footer>
+      </blockquote>
+      <blockquote class="q" style="margin-inline:0">
+        <p>Φαίνεται όλη η πόλη μαζί με τον Θερμαϊκό κόλπο. Η εξυπηρέτηση ήταν με ευγένεια και χαμόγελο.</p>
+        <footer>Nikos Deliakis</footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Πού και πώς</h2>
+    <div class="body">
+      <dl>
+        <dt>Διεύθυνση</dt><dd>Δασόκτημα, Ωραιόκαστρο 570 13</dd>
+        <dt>Τηλέφωνο</dt><dd><a href="tel:+302310674830">231 067 4830</a></dd>
+        <dt>Catering</dt><dd><a href="https://cateringhoutos.gr" rel="noopener">cateringhoutos.gr</a></dd>
+        <dt>Plus code</dt><dd>PWR6+39 Ωραιόκαστρο</dd>
+      </dl>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Bon+Chateau+Ωραιόκαστρο" rel="noopener">Οδηγίες στους Χάρτες Google</a></p>
+    </div>
+  </div>
+
+  <div class="row" id="epikoinonia">
+    <h2>Γράψτε μας</h2>
+    <div class="body">
+      <form id="f" novalidate>
+        <div class="two">
+          <label>Ονοματεπώνυμο<input name="name" required autocomplete="name"></label>
+          <label>Τηλέφωνο<input name="phone" type="tel" required autocomplete="tel"></label>
+        </div>
+        <div class="two">
+          <label>Είδος εκδήλωσης
+            <select name="type"><option>Γάμος</option><option>Βάπτιση</option><option>Δεξίωση</option><option>Άλλο</option></select>
+          </label>
+          <label>Ημερομηνία<input name="date" type="date"></label>
+        </div>
+        <label>Αριθμός καλεσμένων<input name="guests" type="number" min="1"></label>
+        <label>Μήνυμα<textarea name="note" rows="4"></textarea></label>
+        <button type="submit">Στείλτε το αίτημα</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site">Bon Chateau, Δασόκτημα, Ωραιόκαστρο</footer>
+</div>
+
+<script>
+// Βάλτε εδώ το link της φόρμας σας από το formspree.io, π.χ. "https://formspree.io/f/abcdwxyz"
+var FORM_ENDPOINT = "";
+
+document.getElementById('f').addEventListener('submit',async function(e){
+  e.preventDefault();
+  var f=e.target, m=document.getElementById('msg'), b=f.querySelector('button');
+  if(!f.name.value.trim()||!f.phone.value.trim()){m.textContent='Συμπληρώστε ονοματεπώνυμο και τηλέφωνο.';return;}
+  if(!FORM_ENDPOINT){m.textContent='Η φόρμα δεν έχει συνδεθεί ακόμα. Καλέστε στο 231 067 4830.';return;}
+  b.disabled=true; m.textContent='Αποστολή…';
+  try{
+    var r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
+    if(!r.ok) throw new Error();
+    f.reset(); m.textContent='Ευχαριστούμε! Θα επικοινωνήσουμε σύντομα μαζί σας.';
+  }catch(err){
+    m.textContent='Δεν στάλθηκε το αίτημα. Καλέστε στο 231 067 4830.';
+  }
+  b.disabled=false;
+});
+</script>
+</body>
+</html>
